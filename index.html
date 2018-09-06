@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Minimalists Youtube</title>
-  </head>
-  <body>
-    <h1>Minimalist's YouTube Search</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Minimalist's Youtube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>Minimalist's Youtube Search</h1>
+  <h4>Type in your search without you encountering a spatial update</h4>
+
+  <form name="myForm" onsubmit="return validateForm()">
+    <input type="text" name="fname">
+    <!-- <input type="submit" value="Submit"> -->
+  </form>
+
+  <span id="demo"></span>
+
+</body>
+
 </html>
