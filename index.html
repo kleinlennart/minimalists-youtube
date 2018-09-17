@@ -7,18 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <script src="main.js"></script>
+
+  <link rel="icon" href="https://static.filehorse.com/icons-web/video-software/youtube-video-editor-icon-32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Minimalist's Youtube Search</h1>
-  <h4>Type in your search without you encountering a spatial update</h4>
+  <h1 id="heading">Minimalist's Youtube Search</h1>
+  <h4>Type in your search without encountering a spatial update</h4>
 
-  <form name="myForm" onsubmit="return validateForm()">
-    <input type="text" name="fname">
-    <!-- <input type="submit" value="Submit"> -->
+  <form name="YoutubeSearch" action="javascript:validateForm()">
+    <input type="text" name="input" autofocus="autofocus">
+    <input type="submit" style="position: absolute; left: -9999px" />
   </form>
-
-  <span id="demo"></span>
 
 </body>
 

@@ -1,6 +1,5 @@
 function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    //document.getElementById("demo").innerHTML = x;
-
-    var win = window.open("https://www.youtube.com/results?search_query=hello", "_self")
+    var input = document.forms["YoutubeSearch"]["input"].value;
+    var search = input.split(' ').join('+');
+    var win = window.open("https://www.youtube.com/results?search_query=" + search, "_self")
 }
